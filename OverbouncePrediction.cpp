@@ -44,6 +44,8 @@ void OverbouncePrediction::setParameters(float const new_height_difference,
 		gravity = new_gravity;
 		successful_tries_for_go = 0;
 		total_tries_for_go = 0;
+		successful_tries_for_jump = 0;
+		total_tries_for_jump = 0;
 		frametimes.resetReadIndex();
 	}
 
