@@ -18,7 +18,7 @@ public:
 	}
 
 	void resetReadIndex() {
-		std::size_t num_forget = (buffer.size() * READ_RESET_FORGET_RATIO);
+		std::size_t num_forget = static_cast<std::size_t>(buffer.size() * READ_RESET_FORGET_RATIO);
 		readIndex = (insertionIndex + num_forget) % buffer.size();
 	}
 
