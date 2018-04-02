@@ -100,7 +100,7 @@ OverbounceTestResult OverbouncePrediction::checkForOverbounce(
 }
 
 void OverbouncePrediction::calculateProbabilities() {
-    while (!terminateThread) {
+	while (!terminateThread) {
 		std::this_thread::sleep_for(WORKER_SLEEP_TIME);
 
 		std::vector<float> last_frametimes = frametimes.getLastValues();
